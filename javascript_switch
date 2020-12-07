@@ -1,0 +1,89 @@
+<select id="ulke">
+<option>ABD
+<option>Çin
+<option>Rusya
+<option>Çok Uluslu
+<option>Japonya
+<option>İngiltere
+<option>Hindistan
+<option>Kanada
+<option>Lüksemburg
+<option>Almanya
+<option>İspanya
+<option>Arjantin
+<option>Türkiye
+<option>Diğer
+
+</select>
+<input type="button" value="sorgula" onclick="myFunction()"></input>
+<p  id="demo"></p>
+<script type="text/JavaScript">
+function myFunction(){
+var text;
+var ulke=document.getElementById("ulke").value;
+
+switch (ulke)
+{ 
+case "ABD":
+text="uzaydaki uydu sayısı 830";
+break;
+case "Çin":
+text="uzaydaki uydu sayısı 280";
+break;
+case "Rusya":
+text="uzaydaki uydu sayısı 147";
+break;
+case "Çok Uluslu":
+text="uzaydaki uydu sayısı 145";
+break;
+
+case "Japonya":
+text="uzaydaki uydu sayısı 75";
+break;
+case "İngiltere":
+text="uzaydaki uydu sayısı 54";
+break;   
+case "Hindistan":
+text="uzaydaki uydu sayısı 54";
+break;
+case "Kanada":
+text="uzaydaki uydu sayısı 37";
+break;
+case "Lüksemburg":
+text="uzaydaki uydu sayısı 33";
+break; 
+case "Almanya":
+text="uzaydaki uydu sayısı 29";
+break;
+
+case "İspanya":
+text="uzaydaki uydu sayısı 17";
+break;
+
+case "Arjantin":
+text="uzaydaki uydu sayısı 14";
+break;
+
+
+case "Türkiye":
+text="uzaydaki uydu sayısı 6";
+break;
+
+case "Diğer":
+text="uzaydaki uydu sayısı 242";
+break;
+
+
+
+}
+
+
+
+document.getElementById("demo").innerHTML=text
+
+
+}
+
+
+
+</script>
